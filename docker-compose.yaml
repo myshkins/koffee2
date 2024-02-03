@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  frontend:
+    container_name: vite_ssr
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    command: node server
+    ports:
+      - 5173:5173
+

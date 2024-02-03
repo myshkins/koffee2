@@ -1,0 +1,15 @@
+.event-banner {
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    border: solid 1px green;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.event-call-to-act {
+    position: absolute;
+    border: 1px red solid;
+    left: 3rem;
+    top: 5rem;
+}

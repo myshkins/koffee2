@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Halis';
+  src: local('Halis'), url(./fonts/halis/Ahmet\ Altun\ \ HalisGRRegular.woff)
+}
+
+:root {
+  font-family: Roboto, Arial;
+  line-height: 1.5;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #2d2d35;
+
+  --hero-text-color: rgb(64, 52, 52);
+  --hero-bg-color: #edd7bf;
+  --navbar-icon-color: rgb(118, 0, 0);
+}
+
+html {
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--aqua);
+}
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+button {
+  border: none;
+  font-family: roboto;
+  color: var(--hero-text-color);
+  background-color: rgb(255, 251, 244);
+  width: fit-content;
+  font-size: 1.1rem;
+  padding: 2rem 3rem;
+} 
+
+@media screen and (max-width: 1800px) {
+  html {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 1.3rem 3.5rem;
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+}
