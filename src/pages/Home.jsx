@@ -1,4 +1,5 @@
-// import ShopBanner from "../components/ShopBanner";
+import ShopBanner from "../components/ShopBanner";
+import productArray from "../components/productArray";
 // import EventBanner from "../components/EventBanner";
 import Hero from "../components/Hero";
 // import Navbar from "../components/Navbar";
@@ -9,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      {/* <ShopBanner productArray={productArray} /> */}
+      <ShopBanner productArray={productArray} />
       {/* <EventBanner /> */}
     </>
   )

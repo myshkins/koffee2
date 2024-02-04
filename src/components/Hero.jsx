@@ -1,21 +1,18 @@
 import "./Hero.css";
+import { Breakpoints } from "./MediaBreakpoints";
+import { useEffect } from "react";
 
 const Hero = () => {
   return (
     <>
         <div className="hero">
-          <picture>
-            <source
-              srcSet="https://koffee.us-east-1.linodeobjects.com/HeroMobile.webp"
-              media="(max-height: 915px)"/>
-            <source
-              srcSet="https://koffee.us-east-1.linodeobjects.com/HeroDesktop.webp"
-              media="(max-height: 1080px)" />
-            <source
-              srcSet="https://koffee.us-east-1.linodeobjects.com/Hero4k.webp"
-              media="(min-height: 1081px)" />
-            <img src="https://koffee.us-east-1.linodeobjects.com/Hero4k.webp" />
-          </picture>
+          <img
+            srcSet="
+              https://koffee.us-east-1.linodeobjects.com/Hero4k.webp 4240w,
+              https://koffee.us-east-1.linodeobjects.com/HeroDesktop.webp 1797w,
+              https://koffee.us-east-1.linodeobjects.com/HeroMobile.webp 915w"
+            sizes="100vw"
+          />
           <div className="call-to-act">
             <h3>Taste our fresh new blends!</h3>
             <button>SHOP NOW</button>{" "}

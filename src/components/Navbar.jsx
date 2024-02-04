@@ -51,6 +51,12 @@ function Navbar() {
     window.addEventListener("scroll", scrollNavbar);
   });
 
+  // useEffect(() => {
+  //   window.addEventListener("resize", () => {
+  //     console.log(window.innerWidth);
+  //   })
+  // })
+
   return (
     <div className={`navbar ${navbarVisibleClass}`}>
       <Foco onClickOutside={toggleDropDownOff}>

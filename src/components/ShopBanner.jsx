@@ -1,5 +1,4 @@
-// import { CiCircleChevLeft, CiCircleChevRight } from "react-icons/ci";
-import MediaQuery from "react-responsive";
+// import MediaQuery from "react-responsive";
 import "./ShopBanner.css";
 import ProductCard from "./ProductCard";
 import ImageSlider from "./ImageSlider";
@@ -21,13 +20,13 @@ const ShopBanner = (props) => {
 
   return (
     <>
-      <MediaQuery maxWidth={800}>
-        <div className="shop-banner-wrap">{productList}</div>
-      </MediaQuery>
+      {/* <MediaQuery maxWidth={800}> */}
+      {/*   <div className="shop-banner-wrap">{productList}</div> */}
+      {/* </MediaQuery> */}
 
-      <MediaQuery minWidth={801}>
+      {/* <MediaQuery minWidth={801}> */}
       <ImageSlider length={3} productArray={props.productArray} />
-      </MediaQuery>
+      {/* </MediaQuery> */}
     </>
   );
 };

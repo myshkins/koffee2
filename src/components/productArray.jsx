@@ -1,8 +1,8 @@
-import ProductBeanBag from "../assets/ProductBeanBag.webp";
-import ProductBottled from "../assets/ProductBottled.webp";
-import ProductDecanter from "../assets/ProductDecanter.webp";
-import ProductJar from "../assets/ProductJar.webp";
-import ProductTools from "../assets/ProductTools.webp";
+// import ProductBeanBag from "../assets/ProductBeanBag.webp";
+// import ProductBottled from "../assets/ProductBottled.webp";
+// import ProductDecanter from "../assets/ProductDecanter.webp";
+// import ProductJar from "../assets/ProductJar.webp";
+// import ProductTools from "../assets/ProductTools.webp";
 import ProductBeanBagMobile from "../assets/ProductBeanBagMobile.webp";
 import ProductBottledMobile from "../assets/ProductBottledMobile.webp";
 import ProductDecanterMobile from "../assets/ProductDecanterMobile.webp";

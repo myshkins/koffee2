@@ -1,8 +1,6 @@
 import { useState } from "react";
 import IconCircleChevLeft from "~icons/circum/circle-chev-left"
 import IconCircleChevRight from "~icons/circum/circle-chev-right"
-// import { IconChevronLeft } from "~icons/pixelarticons/chevron-left"
-// import { IconChevronRight } from "~icons/pixelarticons/chevron-right"
 import ProductCard from "./ProductCard";
 
 const ImageSlider = (props) => {
