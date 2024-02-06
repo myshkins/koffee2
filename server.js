@@ -79,7 +79,8 @@ export async function createServer(
         return res.redirect(301, context.url)
       }
 
-      const html = template.replace(`<!--app-html-->`, appHtml)
+      let html = template.replace(`<!--app-html-->`, appHtml)
+      html = template.replace(`<!--app-mediaStyle-->`, html)
 
       res.status(200).set({ 'Content-Type': 'text/html' }).end(html)
     } catch (e) {

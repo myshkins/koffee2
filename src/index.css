@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Halis';
-  src: local('Halis'), url(./fonts/halis/Ahmet\ Altun\ \ HalisGRRegular.woff)
+  src: local('Halis'), url(./fonts/halis/AhmetAltunHalisGRRegular.woff)
 }
 
 :root {
@@ -77,3 +77,4 @@ button {
     font-weight: 300;
   }
 }
+

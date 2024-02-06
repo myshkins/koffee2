@@ -2,6 +2,7 @@ import { useState } from "react";
 import IconCircleChevLeft from "~icons/circum/circle-chev-left"
 import IconCircleChevRight from "~icons/circum/circle-chev-right"
 import ProductCard from "./ProductCard";
+import { MediaContextProvider, Media } from "./Media";
 
 const ImageSlider = (props) => {
   const [activeCards, setActiveCards] = useState([...Array(props.length).keys()]);
@@ -22,13 +23,17 @@ const ImageSlider = (props) => {
   return (
     <>
       <div className="shop-banner-wrap">
-        <label htmlFor="shop-slide-left" id="shop-slide-label-left" onClick={scrollLeft}>
-          <IconCircleChevLeft
-            id="shop-slide-left"
-            size={"3rem"}
-            color="grey"
-          />
-        </label>
+        <MediaContextProvider>
+          <Media greaterThan="md">
+            <label htmlFor="shop-slide-left" id="shop-slide-label-left" onClick={scrollLeft}>
+              <IconCircleChevLeft
+                id="shop-slide-left"
+                size={"3rem"}
+                color="grey"
+              />
+            </label>
+          </Media>
+        </MediaContextProvider>
         <div className="slider-window">
             <ul className="shop-banner">
               {props.productArray.map((product, index) => (
@@ -43,13 +48,17 @@ const ImageSlider = (props) => {
               ))}
             </ul>
         </div>
-        <label htmlFor="shop-slide-right" id="shop-slide-label-right" onClick={scrollRight}>
-          <IconCircleChevRight
-            id="shop-slide-right"
-            size={"3rem"}
-            color="grey"
-          />
-        </label>
+          <MediaContextProvider>
+            <Media greaterThan="md">
+              <label htmlFor="shop-slide-right" id="shop-slide-label-right" onClick={scrollRight}>
+              <IconCircleChevRight
+                id="shop-slide-right"
+                size={"3rem"}
+                color="grey"
+              />
+              </label>
+            </Media>
+          </MediaContextProvider>
       </div>
     </>
   );

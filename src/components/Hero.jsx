@@ -1,6 +1,4 @@
 import "./Hero.css";
-import { Breakpoints } from "./MediaBreakpoints";
-import { useEffect } from "react";
 
 const Hero = () => {
   return (

@@ -7,6 +7,7 @@ import SubscribePage from "./pages/SubscribePage";
 import {Route, Routes } from 'react-router-dom'
 import Home from './pages/Home';
 import Layout from './pages/Layout';
+import './index.css'
 
 // Auto generates routes from files under ./pages
 // https://vitejs.dev/guide/features.html#glob-import
@@ -27,7 +28,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/account" element={<AccountPage />} />
+          {/* <Route path="/account" element={<AccountPage />} /> */}
           {/* <Route path="/cart" element={<CartPage />} /> */}
           {/* <Route path="/shop" element={<ShopPage />} /> */}
           {/* <Route path="/subscribe" element={<SubscribePage />} /> */}
@@ -37,27 +38,3 @@ export default function App() {
   );
 }
 
-// export function App() {
-//
-//   return (
-//     <>
-//       <nav>
-//         <ul>
-//           {routes.map(({ name, path }) => {
-//             return (
-//               <li key={path}>
-//                 <Link to={path}>{name}</Link>
-//               </li>
-//             )
-//           })}
-//         </ul>
-//       </nav>
-//       <Routes>
-//         {routes.map(({ path, component: RouteComp }) => {
-//           return <Route key={path} path={path} element={<RouteComp />}></Route>
-//         })}
-//       </Routes>
-//     </>
-//   )
-// }
-//

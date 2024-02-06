@@ -51,15 +51,9 @@ function Navbar() {
     window.addEventListener("scroll", scrollNavbar);
   });
 
-  // useEffect(() => {
-  //   window.addEventListener("resize", () => {
-  //     console.log(window.innerWidth);
-  //   })
-  // })
-
   return (
     <div className={`navbar ${navbarVisibleClass}`}>
-      <Foco onClickOutside={toggleDropDownOff}>
+      {/* <Foco onClickOutside={toggleDropDownOff}> */}
       <div className="hamburger-menu">
         <IconMenuBurger
           onClick={toggleDropDown}
@@ -74,7 +68,7 @@ function Navbar() {
           <li>LEARN</li>
         </ul>
       </nav>
-      </Foco>
+      {/* </Foco> */}
 
       <div className="logo">
         <img src={Jupiter} />
