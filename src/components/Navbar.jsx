@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Foco from "react-foco";
+import OutsideClick from "./OutsideClick";
 import IconMenuBurger  from "~icons/circum/menu-burger"
 import IconShoppingCart from "~icons/circum/shopping-cart"
 import IconUser from "~icons/circum/user"
@@ -49,11 +49,14 @@ function Navbar() {
 
   useEffect(() => {
     window.addEventListener("scroll", scrollNavbar);
+    return () => {
+      window.removeEventListener("scroll", scrollNavbar);
+    }
   });
 
   return (
     <div className={`navbar ${navbarVisibleClass}`}>
-      {/* <Foco onClickOutside={toggleDropDownOff}> */}
+      <OutsideClick onClickOutside={toggleDropDownOff}>
       <div className="hamburger-menu">
         <IconMenuBurger
           onClick={toggleDropDown}
@@ -68,7 +71,7 @@ function Navbar() {
           <li>LEARN</li>
         </ul>
       </nav>
-      {/* </Foco> */}
+      </OutsideClick>
 
       <div className="logo">
         <img src={Jupiter} />
