@@ -2,6 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import express from 'express'
+import { mediaStyle } from './src/components/Media.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
@@ -80,7 +81,7 @@ export async function createServer(
       }
 
       let html = template.replace(`<!--app-html-->`, appHtml)
-      html = template.replace(`<!--app-mediaStyle-->`, html)
+      html = template.replace(`<!--app-mediaStyle-->`, mediaStyle)
 
       res.status(200).set({ 'Content-Type': 'text/html' }).end(html)
     } catch (e) {

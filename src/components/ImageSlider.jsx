@@ -28,8 +28,8 @@ const ImageSlider = (props) => {
             <label htmlFor="shop-slide-left" id="shop-slide-label-left" onClick={scrollLeft}>
               <IconCircleChevLeft
                 id="shop-slide-left"
-                size={"3rem"}
-                color="grey"
+                className="slide-chevron"
+                // style={{ fontSize: '3rem', color: 'grey' }}
               />
             </label>
           </Media>
@@ -53,8 +53,8 @@ const ImageSlider = (props) => {
               <label htmlFor="shop-slide-right" id="shop-slide-label-right" onClick={scrollRight}>
               <IconCircleChevRight
                 id="shop-slide-right"
-                size={"3rem"}
-                color="grey"
+                className="slide-chevron"
+                // style={{ fontSize: '5rem', color: 'grey' }}
               />
               </label>
             </Media>

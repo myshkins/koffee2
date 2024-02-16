@@ -3,11 +3,6 @@
   src: local('Halis'), url(./fonts/halis/AhmetAltunHalisGRRegular.woff)
 }
 
-@font-face {
-  font-family: 'Noto';
-  src: local('Noto'), url(./fonts/noto/NotoColorEmoji-Regular.ttf)
-}
-
 :root {
   font-family: Roboto, Arial;
   line-height: 1.5;
