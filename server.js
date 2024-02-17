@@ -81,7 +81,8 @@ export async function createServer(
       }
 
       let html = template.replace(`<!--app-html-->`, appHtml)
-      html = template.replace(`<!--app-mediaStyle-->`, mediaStyle)
+      html = html.replace(`<!--app-mediaStyle-->`, mediaStyle)
+      console.log(html)
 
       res.status(200).set({ 'Content-Type': 'text/html' }).end(html)
     } catch (e) {

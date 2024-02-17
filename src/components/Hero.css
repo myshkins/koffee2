@@ -24,7 +24,7 @@
   color: var(--navbar-icon-color);
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 917px) {
   .call-to-act {
     bottom: 7rem;
     left: 5rem;

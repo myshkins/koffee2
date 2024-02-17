@@ -18,7 +18,7 @@ const ProductCard = (props) => {
       <div className="product-card-wrap">
         <h4>{props.title}</h4>
         <h5>{props.subtitle}</h5>
-        <img src={props.img} />
+        <img src={props.img} loading="lazy"/>
       </div>
     </li>
   );

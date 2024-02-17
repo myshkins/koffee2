@@ -2,14 +2,25 @@
     position: relative;
     width: 100vw;
     height: 60vh;
-    border: solid 1px green;
-    background-repeat: no-repeat;
-    background-position: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.event-banner img {
+  height: 100%;
 }
 
 .event-call-to-act {
     position: absolute;
-    border: 1px red solid;
     left: 3rem;
     top: 5rem;
+}
+
+@media screen and (min-width: 917px) {
+  .event-banner img {
+    height: auto;
+    width: 100vw;
+  }
 }

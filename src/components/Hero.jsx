@@ -25,7 +25,7 @@ const Hero = () => {
             </picture>
           </div>
           <div className="call-to-act">
-            <h3>Taste our fresh new blends!</h3>
+            <h3>Taste the rainbow.</h3>
             <button>SHOP NOW</button>{" "}
           </div>
         </div>
