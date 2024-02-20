@@ -2,7 +2,7 @@ import { useState } from "react";
 import IconCircleChevLeft from "~icons/circum/circle-chev-left"
 import IconCircleChevRight from "~icons/circum/circle-chev-right"
 import ProductCard from "./ProductCard";
-import { MediaContextProvider, Media } from "./Media";
+import { MediaContextProvider, Media } from "../Media";
 
 const ImageSlider = (props) => {
   const [activeCards, setActiveCards] = useState([...Array(props.length).keys()]);

@@ -6,7 +6,8 @@ services:
     build: 
       context: ./
       dockerfile: Dockerfile
-    command: node server
+    # user: 1000:1000
+    command: node server.js
     ports:
       - 5173:5173
 
