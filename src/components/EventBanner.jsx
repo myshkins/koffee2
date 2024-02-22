@@ -1,7 +1,3 @@
-import EventPicDesktop from "../assets/EventPicDesktop.webp";
-import EventPicMobile from "../assets/EventPicMobile.webp";
-import EventPic4k from "../assets/EventPic4k.webp";
-
 import "./EventBanner.css";
 
 const EventBanner = () => {
@@ -9,9 +5,9 @@ const EventBanner = () => {
     <div className="event-banner">
         <img
           srcSet={`
-            ${EventPic4k} 5472w,
-            ${EventPicDesktop} 2560w,
-            ${EventPicMobile} 980w`}
+            https://koffee.us-east-1.linodeobjects.com/EventPic4k.webp 5472w,
+            https://koffee.us-east-1.linodeobjects.com/EventPicDesktop.webp 2560w,
+            https://koffee.us-east-1.linodeobjects.com/EventPicMobile.webp 980w`}
           alt="an photo looking straight down at a cup of coffee on a plain, empty surface"
           loading="lazy"
         />

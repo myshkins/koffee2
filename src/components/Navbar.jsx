@@ -74,7 +74,7 @@ function Navbar() {
       </OutsideClick>
 
       <div className="logo">
-        <img src={Jupiter} />
+        <img size="43px" src={Jupiter} />
       </div>
 
       <nav className="right-sidebar">
