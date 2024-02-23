@@ -81,8 +81,17 @@ export async function createServer(
         return res.redirect(301, context.url)
       }
 
+      // fill in App html
       let html = template.replace(`<!--app-html-->`, appHtml)
+      // fill in fresnel responsive media styles
       html = html.replace(`<!--app-mediaStyle-->`, mediaStyle)
+      // fill in css styles needed for initial page load
+      const indexCss = fs.readFileSync(resolve('./src/index.css'))
+      const heroCss = fs.readFileSync(resolve('./src/components/Hero.css'))
+      const navbarCss = fs.readFileSync(resolve('./src/components/Navbar.css'))
+      html = html.replace(`<!--index-css-->`, indexCss)
+      html = html.replace(`<!--navbar-css-->`, navbarCss)
+      html = html.replace(`<!--hero-css-->`, heroCss)
 
       res.status(200).set({ 'Content-Type': 'text/html' }).end(html)
     } catch (e) {

@@ -10,6 +10,19 @@
   align-items: center;
 }
 
+.hero-img-wrap {
+  position: relative;
+}
+
+#hero-placeholder {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(to top right, #edcfaa, #f0e1cd);
+  height: 100%;
+  width: 100%;
+}
+
 .hero img {
   height: 100vh;
 }
