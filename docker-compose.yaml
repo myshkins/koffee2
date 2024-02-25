@@ -2,7 +2,7 @@ version: '3'
 
 services:
   frontend:
-    container_name: vite_ssr
+    container_name: koffee
     build: 
       context: ./
       dockerfile: Dockerfile
