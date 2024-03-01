@@ -9,5 +9,5 @@ services:
     user: 1000:1000
     command: node server.js
     ports:
-      - 5173:8090
+      - 8090:5173
 
