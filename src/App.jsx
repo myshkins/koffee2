@@ -28,10 +28,10 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          {/* <Route path="/account" element={<AccountPage />} /> */}
-          {/* <Route path="/cart" element={<CartPage />} /> */}
-          {/* <Route path="/shop" element={<ShopPage />} /> */}
-          {/* <Route path="/subscribe" element={<SubscribePage />} /> */}
+          <Route path="/account" element={<AccountPage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/shop" element={<ShopPage />} />
+          <Route path="/subscribe" element={<SubscribePage />} />
         </Route>
       </Routes>
     </>
