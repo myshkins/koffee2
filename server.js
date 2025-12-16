@@ -16,6 +16,8 @@ export async function createServer(
 ) {
   const resolve = (p) => path.resolve(__dirname, p)
 
+  const base = '/jupiter'
+
   const indexProd = isProd
     ? fs.readFileSync(resolve('dist/client/index.html'), 'utf-8')
     : ''
@@ -31,6 +33,7 @@ export async function createServer(
       await import('vite')
     ).createServer({
       root,
+      base,
       logLevel: isTest ? 'error' : 'info',
       server: {
         middlewareMode: true,
@@ -49,8 +52,9 @@ export async function createServer(
     // use vite's connect instance as middleware
     app.use(vite.middlewares)
   } else {
-    // app.use((await import('compression')).default())
+    // Serve static files under /jupiter
     app.use(
+      base,
       (await import('serve-static')).default(resolve('dist/client'), {
         index: false,
       }),
