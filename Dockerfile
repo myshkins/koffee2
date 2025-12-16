@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 # builder
-FROM node:20.11.0 as builder
+FROM node:20.11.0 AS builder
 
 # RUN apt-get update && apt-get install -y --no-install-recommends dumb-init
 
